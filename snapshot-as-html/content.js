@@ -110,7 +110,7 @@ chrome.runtime.onMessage.addListener(
             ok: true
           });
         })
-        .onerror(function(reason) {
+        .catch(function(reason) {
           console.log(`SNAPSHOT AS HTML ERROR: ${reason}`);
         });
     }
